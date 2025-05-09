@@ -1,11 +1,4 @@
-import {
-  pgTable,
-  uuid,
-  varchar,
-  integer,
-  date,
-  timestamp,
-} from "drizzle-orm/pg-core";
+import { pgTable, uuid, varchar, integer, date } from "drizzle-orm/pg-core";
 import { timestamps } from "./timestamps";
 
 export const weeklyVolume = pgTable("weekly_volume", {
