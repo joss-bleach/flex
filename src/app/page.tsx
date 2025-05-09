@@ -1,10 +1,11 @@
 import { redirect } from "next/navigation";
-import { getSessionUserId } from "@/modules/actions/get-session";
+import { currentUser } from "@clerk/nextjs/server";
 
 const Page = async () => {
-  const userId = await getSessionUserId();
-  if (!userId) {
-    redirect("/auth");
+  const user = await currentUser();
+
+  if (!user) {
+    redirect("/sign-in");
   }
   return <div>Home</div>;
 };
