@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={`${inter.variable} antialiased`}>
+        <body className={`${inter.variable} h-full max-h-screen antialiased`}>
           <AppProvider>{children}</AppProvider>
         </body>
       </html>

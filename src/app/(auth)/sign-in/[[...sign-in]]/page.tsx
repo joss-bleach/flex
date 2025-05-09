@@ -11,7 +11,7 @@ const Page = async () => {
   }
 
   return (
-    <div className="w-[380px]">
+    <div className="w-[380px] p-4 md:p-0">
       <div className="flex flex-col gap-1">
         <h1 className="text-foreground text-3xl font-medium">
           Continue with Google
